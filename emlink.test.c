@@ -51,10 +51,8 @@ int test_apply_state_factor_one(){
             emlink_destroy(emlink);
             return 0;
         }
-    } else {
-        return 1;
     }
-
+    return 1;
 }
 
 int test_apply_state_factor_zero(){
@@ -72,10 +70,8 @@ int test_apply_state_factor_zero(){
             emlink_destroy(emlink);
             return 0;
         }
-    } else {
-        return 1;
     }
-
+    return 1;
 }
 
 int test_apply_state_factor_minus_three(){
@@ -93,11 +89,10 @@ int test_apply_state_factor_minus_three(){
             emlink_destroy(emlink);
             return 0;
         }
-    } else {
-        return 1;
     }
-
+    return 1;
 }
+
 int main(){
     int failed_tests = 0;
     failed_tests += run_test(test_create_emlink_factor_zero, "create_emlink_factor_zero");

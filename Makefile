@@ -1,5 +1,6 @@
 OBJS=emnod.o emlink.o
 TESTS=emnod.test emlink.test
+CFLAGS=-Wall
 
 # Compile and run a single test suite
 %.test: %.c %.h %.test.c util_test.c $(OBJS)
